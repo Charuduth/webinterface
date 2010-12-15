@@ -6,11 +6,11 @@ require_once('tickets.php');
 
 $title = 'Support-Tickets';
 
-output('<h3>Support-Tickets</h3>
+output('
 <p>Über dieses Ticket-System ist es Ihnen möglich, Anfragen oder Mitteilungen an den Support zu richten. An dieser Stelle sehen Sie immer den aktuellen Stand Ihrer Anfrage.</p>
 ');
 
-output('<h4>Bisher vorhandene Tickets</h4>');
+output('<h4>Aktuelle und kürzlich bearbeitete Tickets</h4>');
 
 $tickets = list_tickets();
 
@@ -29,5 +29,7 @@ else
 {
   output('<p><em>Bisher sind keine Tickets vorhanden</em></p>');
 }
+
+addnew('new_ticket.php', 'Neues Ticket erstellen');
 
 
