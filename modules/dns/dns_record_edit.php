@@ -127,8 +127,8 @@ if ($type == 'sshfp') {
     1 => "RSA",
     2 => "DSA",
     3 => "ECDSA",
-    4 => "ED25519" );
-
+    4 => "ED25519"
+    5 => "XMSS");
     $option="";
     foreach ($algs as $key => $alg) {
         $option .= '<option value="'.$key.'" ';
